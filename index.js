@@ -37,6 +37,13 @@ async function bootstrap() {
     })
 
 
+    // make user admin
+    app.put('/users/admin/:id', async (req, res) => {
+      console.log("route matched");
+      
+    })
+
+
     // user post from frontend to database
 
       app.post('/users', async (req, res) => {
